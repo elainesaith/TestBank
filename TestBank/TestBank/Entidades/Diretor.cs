@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestBank.SistemaInterno;
 
 namespace TestBank.Entidades
 {
-    public class Diretor: Funcionario
+    public class Diretor: Autenticavel
     {
         public override double CalcularComissao()
         {
@@ -16,7 +17,7 @@ namespace TestBank.Entidades
         {
             return salario + base.PremioSemestral();
         }
-        public Diretor(string cpf, double salario): base(cpf, salario)
+        public Diretor(string cpf, string nome, double salario): base(cpf, nome, salario)
         {
             Console.WriteLine("Criando um diretor..");
         }

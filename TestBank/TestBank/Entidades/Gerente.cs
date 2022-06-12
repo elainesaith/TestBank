@@ -3,24 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestBank.SistemaInterno;
 
 namespace TestBank.Entidades
 {
-    public class Vendedor: Funcionario
+    public class Gerente : Autenticavel
     {
-        public Vendedor(string cpf,  string nome, double salario) : base(cpf, nome, salario)
+        public Gerente(string cpf, string nome, double salario) : base(cpf, nome, salario)
         {
-
+            Console.WriteLine("Criando um gerente...");
         }
 
         public override void AumentarSalario()
         {
-            salario *= 1.21;
+            this.salario *= 1.05;
         }
 
         public override double CalcularComissao()
         {
-            return salario * 0.21;
+            return this.salario * 0.8;
         }
     }
 }

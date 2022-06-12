@@ -19,7 +19,7 @@ namespace TestBank.Entidades
             this.salario *= 1.18;
         }
 
-        public Supervisor(string cpf, double salario) : base(cpf, salario)
+        public Supervisor(string cpf, string nome, double salario) : base(cpf, nome, salario)
         {
 
         }

@@ -8,7 +8,7 @@ namespace TestBank.Entidades
 {
     public class Desenvolvedor: Funcionario
     {
-        public Desenvolvedor(string cpf, double salario) : base(cpf, salario)
+        public Desenvolvedor(string cpf, string nome, double salario) : base(cpf, nome, salario)
         {
 
         }
